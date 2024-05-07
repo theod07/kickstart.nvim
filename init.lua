@@ -152,7 +152,7 @@ vim.opt.inccommand = 'split'
 vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+vim.opt.scrolloff = 8
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -910,3 +910,13 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- TODO
+-- vim.keymap.set('n', '<leader><C-E>', '<cmd>echo "EEEEEEEEEE!!"<CR>', { desc = 'EEEEEEEEEE' })
+-- CMD-1 filetree
+-- CMD-7 structure
+-- Shift-Shift omni-search
+-- CMD-E recent files
+-- toggle blame
+-- refactor/extract
+-- code fold
