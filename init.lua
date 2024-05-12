@@ -939,6 +939,7 @@ require('lazy').setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
+vim.keymap.set('n', '<C-C>', '<cmd>call setreg("+", expand("%"))<CR>', { desc = 'copy file path' })
 -- TODO
 -- vim.keymap.set('n', '<leader><C-E>', '<cmd>echo "EEEEEEEEEE!!"<CR>', { desc = 'EEEEEEEEEE' })
 -- CMD-1 filetree
