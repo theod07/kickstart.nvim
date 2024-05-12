@@ -408,7 +408,7 @@ require('lazy').setup({
           cwd = path,
           prompt_title = 'Live Grep in $HOME/projects',
         }
-      end, { desc = '[S]earch Grep [G]lobal ($HOME/projects)' })
+      end, { desc = '[s]earch [G]lobal grep ($HOME/projects)' })
 
       -- Shortcut for searching your Neovim configuration files
       vim.keymap.set('n', '<leader>sn', function()
