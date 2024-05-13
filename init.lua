@@ -940,10 +940,10 @@ require('lazy').setup({
 -- vim: ts=2 sts=2 sw=2 et
 
 vim.keymap.set('n', '<C-C>', '<cmd>call setreg("+", expand("%"))<CR>', { desc = 'copy file path' })
+vim.keymap.set('n', '<leader>7', '<cmd>lua require("telescope.builtin").lsp_document_symbols()<CR>', { desc = 'document symbols' })
 -- TODO
 -- vim.keymap.set('n', '<leader><C-E>', '<cmd>echo "EEEEEEEEEE!!"<CR>', { desc = 'EEEEEEEEEE' })
 -- CMD-1 filetree
--- CMD-7 structure
 -- Shift-Shift omni-search
 -- CMD-E recent files
 -- toggle blame
