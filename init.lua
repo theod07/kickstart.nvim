@@ -379,17 +379,18 @@ require('lazy').setup({
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[s]earch by [g]rep (respects .gitignore)' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[s]earch [d]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[s]earch [r]esume' })
+      vim.keymap.set('n', '<leader>sf', builtin.find_files, { desc = '[s]earch [f]iles' })
       vim.keymap.set('n', '<leader>se', builtin.oldfiles, { desc = '[s]earch r[e]cent Files' })
       vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = '[ ] Find existing buffers' })
 
       -- customized find_files
-      vim.keymap.set('n', '<leader>sf', function()
+      vim.keymap.set('n', '<leader>sF', function()
         builtin.find_files {
           hidden = true,
           no_ignore = true,
           no_ignore_parent = true,
         }
-      end, { desc = '[s]earch [f]iles' })
+      end, { desc = '[s]earch all [F]iles' })
 
       -- Slightly advanced example of overriding default behavior and theme
       vim.keymap.set('n', '<leader>/', function()
