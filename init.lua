@@ -190,6 +190,15 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
+-- Keybinds to make split resizing easier.
+--  Use OPTION+<,.-=>
+--
+--  NOTE: On MacOS, this requires configuring Option as Meta/Esc+ key
+vim.keymap.set('n', '<M-,>', '<C-w>5<', { desc = 'Decrease width of split' })
+vim.keymap.set('n', '<M-.>', '<C-w>5>', { desc = 'Increase width of split' })
+vim.keymap.set('n', '<M-=>', '<C-w>+', { desc = 'Increase height of split' })
+vim.keymap.set('n', '<M-->', '<C-w>-', { desc = 'Decrease height of split' })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
